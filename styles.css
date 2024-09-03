@@ -16,7 +16,7 @@ a {
 
 .fondo_inicio {
     background-image: url(images/fondo_inicio.png);
-    height: 978px;
+    height: 930px;
 
 }
 
@@ -35,7 +35,7 @@ a {
 
 .textura {
     background-image: url(images/textura.png);
-    height: 919px;
+    min-height: 919px;
     position: fixed;
 
 }
@@ -886,4 +886,53 @@ h6 {
     margin-bottom: 40px;
     border-radius: 10px;
     margin-inline: auto;
+}
+
+.foother {
+    height: 300px;
+    padding-top: 150px;
+    background-image: url(images/foother.png);
+    background-repeat: no-repeat;
+}
+
+.redes_1 {
+    width: 60px;
+    height: 60px;
+    background-image: url(images/ico_insta.png);
+}
+
+.redes_2 {
+    width: 60px;
+    height: 60px;
+    background-image: url(images/ico_git.png);
+}
+
+.redes_3 {
+    width: 60px;
+    height: 60px;
+    background-image: url(images/ico_arro.png);
+}
+
+.redes_4 {
+    width: 60px;
+    height: 60px;
+    background-image: url(images/ico_what.png);
+}
+
+.redes_texto {
+    font-family: 'super-legend-boy';
+    font-size: small;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.596);
+}
+
+.contenedor {
+    height: 80;
+}
+
+.cont_1 {
+    font-family: 'super-legend-boy';
+    font-size: medium;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.596);
 }
