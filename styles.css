@@ -764,6 +764,10 @@ h6 {
         margin-left: -25px;
         transform: scale(0.8);
     }
+
+    .contenedor {
+        transform: scale(0.8);
+    }
 }
 
 .ilus_1 {
@@ -928,6 +932,8 @@ h6 {
 
 .contenedor {
     height: 80;
+    cursor: pointer;
+    
 }
 
 .cont_1 {
