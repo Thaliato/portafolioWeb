@@ -1,0 +1,943 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*-------------------------- PAGINA INICIO -----------------------------*/
+
+.fondo_inicio {
+    background-image: url(images/fondo_inicio.png);
+    min-height: 100vh;
+
+}
+
+.fondo_perfil {
+    background-image: url(images/fondo_prueba.png);
+    min-height: 200px; 
+
+}
+
+.fondo_blog {
+    background-image: url(images/fondo_blog.png);
+    min-height: 200px; 
+    margin-left: -1.3px;
+
+}
+
+.textura {
+    background-image: url(images/textura.png);
+    min-height: 919px;
+    position: fixed;
+
+}
+
+.nubes {
+    background-image: url(images/nubes.png);
+    height: 465px;
+    width: 2015px;
+
+}
+
+.boton_inicio {
+    height: 365px;
+    width: 160px;
+    background-image: url(images/logo1.png);
+    position: fixed;
+    top: 165px;
+    left: -15px;
+    z-index: 1;
+}
+
+.nave {
+    height: 240px;
+    background-image: url(images/gifprueba4.gif);
+    background-repeat: no-repeat;
+    margin-top: 330px;
+    z-index: 1;
+    background-position: 60%;
+    animation: nave 5s ease-in-out infinite ;
+}
+
+.nave2 {
+    height: 240px;
+    background-image: url(images/gifprueba3.gif);
+    background-repeat: no-repeat;
+    margin-top: 330px;
+    z-index: 1;
+    background-position: 60%;
+    animation: nave 5s ease-in-out infinite ;
+}
+
+@keyframes nave {
+    0% {
+        transform: translateY(0); /* Posición inicial (arriba) */
+      }
+      50% {
+        transform: translateY(100px); /* Mover hacia abajo */
+      }
+      100% {
+        transform: translateY(0); /* Regresar a la posición inicial (arriba) */
+      }
+}
+
+@font-face{
+    font-family:'super-legend-boy';
+    src: url(fuentes/super-legend-boy.otf)
+}
+
+.texto_1 {
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.842);
+    width: 320px;
+    font-family: 'super-legend-boy';
+    margin-top: 500px;
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+
+}
+
+.caja_1 {
+    background-image: url(images/estrellas.png);
+    background-repeat: no-repeat;
+    background-position: 50% 320px;
+    height: 720px;
+}
+
+@media (min-width: 150px) and (max-width: 767px) {
+    .nubes {
+        display: none;
+    }
+}
+
+@media (min-width: 150px) and (max-width: 767px) {
+    .boton_inicio {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .enpe {
+        transform: scale(0.8); 
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .enpe {
+        transform: scale(0.7); 
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nave2 {
+        transform: scale(0.7); 
+        margin-top: -270px;
+        background-position: 45%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .caja_1  {
+        background-position-y: 30%;
+    }
+
+    .texto_1 {
+        top: -200px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .boton_inicio {
+        transform: scale(0.8); 
+        left: -30px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .barra_menu {
+        transform: scale(0.9); 
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .caja_bajar {
+        display: none;
+    }
+    
+    .barra_menu {
+        display: flex;
+        transform: scale(0.7);
+        margin-inline-end: -30px !important;
+    }
+
+    .barra_cel {
+        height: 110px;
+        background-image: url(images/fondo_cel.png);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        margin-top: -5px;
+    }
+
+    .logo_hori {
+        height: 50px;
+        width: 80px;
+        background-image: url(images/logo_hori5.png);
+        background-repeat: no-repeat;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .boton_1{
+        margin-top: 0 !important;
+    }
+
+    .boton_2{
+        margin-right: 8px;
+    }
+
+    .boton_4{
+        margin-left: -5px;
+    }
+
+    a:hover .hover_1 {
+       display: none !important;
+    }
+
+    a:hover .hover_2 {
+        display: none !important;
+    }
+
+    a:hover .hover_3 {
+        display: none !important;
+    }
+
+    a:hover .hover_4 {
+        display: none !important;
+    }
+
+    .hover_cel_ini {
+        transform: scale(0.7);
+        font-family: 'super-legend-boy';
+        font-size: x-small;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+        padding-top: 52px;
+    }
+
+    .hover_cel_1 {
+        position: absolute;
+        font-family: 'super-legend-boy';
+        font-size: x-small;
+        top: 65px;
+        right: 225px;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+
+    .hover_cel_2 {
+        position: absolute;
+        font-family: 'super-legend-boy';
+        font-size: x-small;
+        top: 65px;
+        right: 135px;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+
+    .hover_cel_3 {
+        position: absolute;
+        font-family: 'super-legend-boy';
+        font-size: x-small;
+        top: 65px;
+        right: 88px;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+
+    .hover_cel_4 {
+        position: absolute;
+        font-family: 'super-legend-boy';
+        font-size: x-small;
+        top: 65px;
+        right: 1px;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+}
+
+@media (min-width: 767px) and (max-width: 4800px) {
+    .barra_menu_hori {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 100px) {
+    .barra_menu_hori {
+        display: flex;
+    }
+}
+
+
+/*-------------------------- PAGINA INICIO -----------------------------*/
+
+/*-------------------------- MENU BOTONES  -----------------------------*/
+
+.barra_menu {
+    position: fixed;
+    margin-inline-end: 20px;
+}
+
+.boton_1 {
+    background-position: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(images/perfil.png);
+    margin-top: 20px;
+}
+
+.boton_2 {
+    background-position: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(images/portafolio.png);
+}
+
+.boton_3 {
+    background-position: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(images/blog.png);
+}
+
+.boton_4 {
+    background-position: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(images/contacto.png);
+    background-repeat: no-repeat;
+}
+
+.hover_1 {
+    display: none;
+    position: absolute;
+    font-family: 'super-legend-boy';
+    font-size: smaller;
+    top: 45px;
+    right: 60px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.hover_2 {
+    display: none;
+    position: absolute;
+    font-family: 'super-legend-boy';
+    font-size: smaller;
+    top: 120px;
+    right: 70px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.hover_3 {
+    display: none;
+    position: absolute;
+    font-family: 'super-legend-boy';
+    font-size: smaller;
+    top: 190px;
+    right: 70px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.hover_4 {
+    display: none;
+    position: absolute;
+    font-family: 'super-legend-boy';
+    font-size: smaller;
+    top: 257px;
+    right: 70px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+a:hover .hover_1{
+    display: block;
+}
+
+a:hover .hover_2{
+    display: block;
+}
+
+a:hover .hover_3{
+    display: block;
+}
+
+a:hover .hover_4{
+    display: block;
+}
+
+.caja_bajar {
+    padding-top: 400px;
+}
+
+.boton_subir {
+    background-position: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(images/arriba.png);
+    cursor: pointer;
+}
+
+.boton_bajar {
+    background-position: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(images/abajo.png);
+    cursor: pointer;
+}
+/*-------------------------- MENU BOTONES -----------------------------*/
+
+/*-------------------------- PAGINA PERFIL  -----------------------------*/
+
+
+.blanca {
+    background-color: rgba(254, 255, 255, 0.384);
+    height: 550px;
+}
+
+.blanca_1 {
+    background-color: rgba(254, 255, 255, 0.116);
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    
+}
+
+.texto_1_perfil {
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.842);
+    width: 320px;
+    font-family: 'super-legend-boy';
+    margin-top: 230px;
+    font-weight: 500;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.estrellas {
+    background-image: url(images/estrellas_2.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100px;
+    height: 520px;
+}
+
+h6 {
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.842);
+    font-family: 'super-legend-boy';
+    margin-top: 40px;
+    text-align: center;
+}
+
+.texto_lectura {
+    font-family: "Roboto Mono", monospace;
+    font-size: smaller;
+    font-weight: 200;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+
+
+/*-------------------------- PAGINA PERFIL  -----------------------------*/
+
+.cua {
+    background-color: aqua;
+    z-index: 0;
+    min-height: 100px;
+}
+
+.cua1 {
+    background-color: rgba(240, 240, 240, 0.150);
+    z-index: 0;
+    min-height: 100px;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.cua2 {
+
+    z-index: 0;
+    min-height: 100px;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.contenido_1 {
+    z-index: 0;
+    min-height: 100px;
+}
+
+.titulo_1 {
+    font-family: 'super-legend-boy';
+    margin-top: 30px;
+    font-size: medium;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.596);
+}
+
+.info_1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: smaller;
+    text-align: justify;
+    font-family: "Roboto Mono", system-ui;
+    line-height: 1.2;
+}
+
+.info_2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: smaller;
+    text-align: center;
+    font-family: "Roboto Mono", system-ui;
+    line-height: 1.2;
+}
+
+.info_3 {
+    margin-top: 20px;
+    font-size: smaller;
+    text-align: justify;
+    font-family: "Roboto Mono", system-ui;
+    line-height: 1.2;
+}
+
+.foto_mia {
+    height: 200px;
+    width: 300px;
+    background-image: url(images/thalia.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.ico_soft {
+    height: 100px;
+    width: 300px;
+    background-image: url(images/softwares.png);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.sub_titulo_1 {
+    font-family: 'super-legend-boy';
+    margin-top: 30px;
+    font-size: small;
+    text-align: left;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.596);
+}
+
+.sub_titulo_2 {
+    font-family: 'super-legend-boy';
+    margin-top: 30px;
+    font-size: small;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.596);
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .estrellas {
+        transform: scale(0.8);       
+    }
+
+    .info_1 {
+        transform: scale(0.9);
+    }
+
+    .titulo_1 {
+        transform: scale(0.9);
+    }
+
+    .info_2 {
+        transform: scale(0.9);
+    }
+  
+    .sub_titulo_1 {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .publi_1 {
+        margin-inline: auto;
+
+    }
+
+    .publi_2 {
+        margin-inline: auto;
+        transform: scale(0.6);
+        margin-left: -65px;
+        margin-top: -20px;
+    }
+
+    .publi_3 {
+        margin-inline: auto;
+        transform: scale(0.6);
+        margin-left: -65px;
+        margin-top: -60px;
+    }
+
+    .publi_4 {
+        margin-inline: auto;
+        margin-top: -20px;
+
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    
+    .publi_1 {
+        margin-inline: auto;
+        transform: scale(0.9);
+    }
+
+    .publi_2 {
+
+        transform: scale(0.7);
+        margin-top: -20px;
+
+    }
+
+    .publi_3 {
+        margin-top: -40px;
+        transform: scale(0.7);
+    }
+
+    .publi_4 {
+        margin-inline: auto;
+        margin-top: -20px;
+
+        transform: scale(0.9);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    
+    .publi_1 {
+        margin-inline: auto;
+        transform: scale(0.9);
+
+    }
+
+    .publi_2 {
+        margin-inline: auto;
+        transform: scale(0.9);
+    }
+
+    .publi_3 {
+        margin-inline: auto;
+        transform: scale(0.9);
+
+    }
+
+    .publi_4 {
+        margin-inline: auto;
+        transform: scale(0.9);
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 5000px) {
+    
+    .publi_1 {
+        float: inline-start;
+
+    }
+
+    .publi_2 {
+        float: inline-end;
+
+    }
+
+    .publi_3 {
+        float: inline-start;
+
+    }
+
+    .publi_4 {
+        float: inline-end;
+    }
+}
+
+.publi_1 {
+    height: 260px;
+    width: 260px;
+    background-image: url(images/publi_1.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+}
+
+.publi_2 {
+    height: 260px;
+    width: 500px;
+    background-image: url(images/publi_2.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.publi_3 {
+    height: 260px;
+    width: 500px;
+    background-image: url(images/publi_3.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.publi_4 {
+    height: 260px;
+    width: 260px;
+    background-image: url(images/publi_4.png);
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    border-radius: 10px;    
+}
+
+.manu {
+    height: 260px;
+    width: 400px;
+    background-image: url(images/manu_1.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    border-radius: 10px;  
+    margin-inline: auto;
+}
+
+.manu_2 {
+    height: 260px;
+    width: 400px;
+    background-image: url(images/manu_2.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    border-radius: 10px;  
+    margin-inline: auto;
+}
+
+.manu_3 {
+    height: 260px;
+    width: 400px;
+    background-image: url(images/manu_3.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    border-radius: 10px;  
+    margin-inline: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .manu {
+        margin-left: -25px;
+        transform: scale(0.8);
+    }
+
+    .manu_2 {
+        margin-left: -25px;
+        transform: scale(0.8);
+    }
+
+    .manu_3 {
+        margin-left: -25px;
+        transform: scale(0.8);
+    }
+
+    .contenedor {
+        transform: scale(0.8);
+    }
+}
+
+.ilus_1 {
+    height: 350px;
+    width: 300px;
+    background-image: url(images/ilus_1.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.ilus_2 {
+    height: 350px;
+    width: 300px;
+    background-image: url(images/ilus_2.gif);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.ilus_3 {
+    height: 350px;
+    width: 300px;
+    background-image: url(images/ilus_3.gif);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.ilus_4 {
+    height: 350px;
+    width: 300px;
+    background-image: url(images/ilus_4.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.blo_1 {
+    height: 284px;
+    background-position-x: 50%;
+    background-image: url(images/blo_1.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.blo_2 {
+    height: 80px;
+    background-position-x: 50%;
+    background-image: url(images/blo_2.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.blo_3 {
+    height: 290px;
+    background-position-x: 50%;
+    background-image: url(images/blo_3.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+
+.blo_4 {
+    height: 290px;
+    background-position-x: 50%;
+    background-image: url(images/blo_4.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.blo_5 {
+    height: 100px;
+    background-position-x: 50%;
+    background-image: url(images/blo_5.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.blo_6 {
+    height: 290px;
+    background-position-x: 50%;
+    background-image: url(images/blo_6.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.blo_7 {
+    height: 290px;
+    background-position-x: 50%;
+    background-image: url(images/blo_7.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.foother {
+    padding-top: 150px;
+    background-image: url(images/foother.png);
+    background-repeat: no-repeat;
+}
+
+.redes_1 {
+    width: 60px;
+    height: 60px;
+    background-image: url(images/ico_insta.png);
+}
+
+.redes_2 {
+    width: 60px;
+    height: 60px;
+    background-image: url(images/ico_git.png);
+}
+
+.redes_3 {
+    width: 60px;
+    height: 60px;
+    background-image: url(images/ico_arro.png);
+}
+
+.redes_4 {
+    width: 60px;
+    height: 60px;
+    background-image: url(images/ico_what.png);
+}
+
+.redes_texto {
+    font-family: 'super-legend-boy';
+    font-size: small;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.596);
+}
+
+.contenedor {
+    height: 80;
+    cursor: pointer;
+    
+}
+
+.cont_1 {
+    font-family: 'super-legend-boy';
+    font-size: medium;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.596);
+}
